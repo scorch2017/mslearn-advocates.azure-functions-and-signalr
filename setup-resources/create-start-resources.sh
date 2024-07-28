@@ -21,11 +21,11 @@ printf "User logged in\n"
 NODE_ENV_FILE="./.env"
 
 # Get user name
-USER_NAME=$(az account show --query 'user.name' -o tsv)
+#USER_NAME=$(az account show --query 'user.name' -o tsv)
 # Capture name before `@` in user.name
-USER_NAME=${USER_NAME%%@*}
-printf "User name: $USER_NAME\n"
-
+#USER_NAME=${USER_NAME%%@*}
+#printf "User name: $USER_NAME\n"
+USER_NAME="scorch2017"
 # Get the default subscription if not provided as a parameter
 SUBSCRIPTION_NAME=$1
 printf "Using subscription: ""$SUBSCRIPTION_NAME""\n"
